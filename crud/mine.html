@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Crud</title>
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+      <h1 class="text-center text-primary pt-4 fw-bold">Our Products</h1>
+      <div class="container text-primary fw-bold">
+            <div class="row p-md-5">
+
+                  <!-- Product Name input field -->
+                  <div class="my-2">
+                        <label for="inputNameId" id="nameLabel" class="form-label">Product Name</label>
+                        <input type="text" id="inputNameId"
+                              class="form-control">
+                  </div>
+
+                  <!-- Product Price input field -->
+                  <div class="my-2">
+                        <label for="inputPriceId" class="form-label">Product Price</label>
+                        <input type="number" id="inputPriceId" class="form-control">
+                  </div>
+
+                  <!-- Product Category input field -->
+                  <div class="my-2">
+                        <label for="inputCategoryId" class="form-label">Product Category</label>
+                        <input type="text" id="inputCategoryId" class="form-control">
+                  </div>
+
+                  <!-- Product Description input field -->
+                  <div class="my-2">
+                        <label for="inputDescriptionId" class="form-label">Product Description</label>
+                        <textarea type="text" id="inputDescriptionId" class="form-control" rows="5"></textarea>
+                  </div>
+
+                  <!-- Product Count input field -->
+                  <div class="my-2">
+                        <label for="inputCountId" class="form-label">Product Count</label>
+                        <input type="number" id="inputCountId" class="form-control">
+                  </div>
+
+                  <!-- Add Product button -->
+                  <div class="my-3 w-75 m-auto text-center">
+                        <button id="myBtn" class="btn btn-primary btn-lg">Add Product</button>
+                  </div>
+
+                  <!-- Search inputs for name and category -->
+                  <div class="my-3 w-100 d-flex justify-content-around text-center">
+                        <input onkeyup="searchName(this.value)" type="text" placeholder="Search Name"
+                              class="form-control w-50 me-3">
+                        <input onkeyup="searchCategory(this.value)" type="text" placeholder="Search Category"
+                              class="form-control w-50 ms-3">
+                  </div>
+
+                  <!-- Table to display products -->
+                  <div class="w-100 m-auto">
+                        <table class="table align-middle text-center">
+                              <!-- Table headers -->
+                              <thead class="text-primary">
+                                    <th class="col-1">Number</th>
+                                    <th class="col-2">Name</th>
+                                    <th class="col-1">Price</th>
+                                    <th class="col-2">Category</th>
+                                    <th class="col-2 col-md-3">Description</th>
+                                    <th class="col-2 col-md-1 text-end">Count</th>
+                                    <th class="col-1 text-warning">Update</th>
+                                    <th class="col-1 text-danger">Delete</th>
+                              </thead>
+
+                              <!-- Table body to display product data -->
+                              <tbody id="tBody">
+                              </tbody>
+                        </table>
+                  </div>
+            </div>
+      </div>
+
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="index.js"></script>
+</body>
+
+</html>

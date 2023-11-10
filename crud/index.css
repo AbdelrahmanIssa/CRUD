@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+      th { padding: 0 !important;
+            font-size: 9px;
+            max-width: 40px !important;
+      }
+
+      td {
+            font-size: 9px !important;
+            padding: 2px !important;
+            background-color: #340d0d;
+      }
+
+      .btnChange {
+            font-size: 9px !important;
+      }
+
+}
